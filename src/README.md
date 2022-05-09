@@ -1,11 +1,11 @@
 # Types of Programming Language:
-- a)Procedural Languages:
+- **a)Procedural Languages:**
     - A program is simply a list of instructions which is executed line by line.
     - As the length of program increases, the complexity also increases making it
       difficult to maintain large programs.
     - Relative fast
     - Ex: C etc.
-- b)Object Oriented Languages:
+- **b)Object Oriented Languages:**
     - A programming pattern which deals with the concept of objects to build programs.
     - Modelled around real world.
     - A real world object has
@@ -17,7 +17,8 @@
     - Objects exhibit similar property in OOP also.
     - Relatively slow in execution
     - Ex: JAVA, C++ etc.
-
+  
+----
 # Features of Object-Oriented Programming:
 ### Classes:
 - A class is defined as the blueprint for an object.
@@ -39,7 +40,8 @@
 - There exists a parent-child relationship among the classes.
 - When a class inherits another class, it has all the properties of the parent-class and it may have additional properties of it's own.
 - For Ex: To make a Scientific Calculator with complex operations and basic operations the Basic Calculator can be inherited instead of adding the basic operations from scratch.
-## Encapsulation:
+
+### Encapsulation:
 - Encapsulation is a feature of binding data into objects to hide them from outside world.
 - It restricts direct access to the data.
 - The access of data is to be done through the methods of the class.
@@ -58,8 +60,7 @@
     class Main{
         public static void main(String []args){
             Encapsule obj = new Encapsule();
-            ___obj.a = 20;___
-            //indirect access.
+            //obj.a = 20; //encapsulated variable can't access directly
             obj.setA(20);
         }
     }
@@ -68,9 +69,12 @@
 ### Polymorphism:
 -   Polymorphism means same thing being used in different ways.
 - There are two type of polymorphism
-  a) compile-time polymorphism.
-  b) run-time polymorphism.
+  - a) compile-time polymorphism.
+  - b) run-time polymorphism.
 
+----
+---
+#Introduction to Java:
 # Java:
 - Programming Language: Java is a high level, object-oriented programming language.
 - Platform: Java is also a platform, as it has it's own runtime environment JVM (Java Virtual Machine).
@@ -80,6 +84,7 @@
 - Developed by James Gosling and team at Sun Microsystem in 1991.
 - Oak was the first name of Java
 - Oracle acquired sun microsystem in 2010.
+----
 
 ## Features of Java: 
 
@@ -98,28 +103,28 @@ To run this platform independent bytecode, JVM(Java virtual machine) is required
 - Java support primitive data type like int, byte, short \.\. etc. and these are not objects.
 
 ### Both Compiled and Interpreted: 
-#### Compilation: 
--The program source code is first converted into native machine code through a compiler.
+- #### Compilation: 
+  - The program source code is first converted into native machine code through a compiler.
 The output of compiler is a executable program (.exe file)
-- This executable program(.exe file) load directly into processor and gets executed
-- The advantage is fast speed as the compiler can perform optimization because it looks at the program as a whole not 
-    line by line.
-- The disadvantage would be slower debugging (for each change the entire program needs to be re-compiled) and reduced
- portability (as the program needs to be compiled for each specific platform)
+  - This executable program(.exe file) load directly into processor and gets executed
+  - The advantage is fast speed as the compiler can perform optimization because it looks at the program as a whole not 
+      line by line.
+  - The disadvantage would be slower debugging (for each change the entire program needs to be re-compiled) and reduced
+   portability (as the program needs to be compiled for each specific platform)
 
-#### Interpretation: 
--An interpreter reads one line of code and executes it before going for next line.
-The line is converted into native machine code and executed before moving for next line.
-- In interpretation there is no intemediate steps between writing the code and running it.
-- The advantage will be fast debugging as there is no intermediate step between writing a program and running it) 
- and increased portability.
-- The disadvantage would be slower speed
+- #### Interpretation: 
+  - An interpreter reads one line of code and executes it before going for next line.
+  The line is converted into native machine code and executed before moving for next line.
+  - In interpretation there is no intemediate steps between writing the code and running it.
+  - The advantage will be fast debugging as there is no intermediate step between writing a program and running it) 
+   and increased portability.
+  - The disadvantage would be slower speed
 
-#### Java's Approach:
-    Java follows both compilation and interpretation.
-- Compilation: The Java program is compiled into an intermediate form bytecode (.class file). 
-- Then the JVM interprets this bytecode
-- The bytecode will run on any platform which has JVM installed (as the program runs in JVM, so platform doesn't matter).
+- #### Java's Approach:
+  - **Java follows both compilation and interpretation.**
+  - Compilation: The Java program is compiled into an intermediate form bytecode (.class file). 
+  - Then the JVM interprets this bytecode
+  - The bytecode will run on any platform which has JVM installed (as the program runs in JVM, so platform doesn't matter).
 
 ### Automatic Memory Management :
 - JVM performs Automatic Memory Management 

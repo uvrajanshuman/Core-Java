@@ -71,5 +71,72 @@
   a) compile-time polymorphism.
   b) run-time polymorphism.
 
+# Java:
+- Programming Language: Java is a high level, object-oriented programming language.
+- Platform: Java is also a platform, as it has it's own runtime environment JVM (Java Virtual Machine).
+  JVM provides a platform which accepts the bytecode and executes on machine.
     
+## History Of Java:
+- Developed by James Gosling and team at Sun Microsystem in 1991.
+- Oak was the first name of Java
+- Oracle acquired sun microsystem in 2010.
+
+## Features of Java: 
+
+### Platform Independence:
+- Java is designed to be platform neutral so that it can run on multiple platforms.
+- Java source code is compiled into an intermediate form called bytecode. This bytecode is platform independent but can not run 
+directly on any operating system.
+The Java compiler is same for all platforms (unlike c/c++ where compilers are platform dependent).
+To run this platform independent bytecode, JVM(Java virtual machine) is required which is platform specific.
+
+![ Platform Independence of Java ](../assets/images/java-program-execution.png);
+
+### Object Oriented:
+- Java is nearly 100% object-oriented language.
+- Everything in Java (constant, variable, method) are defined inside a class and accessed through objects.
+- Java support primitive data type like int, byte, short \.\. etc. and these are not objects.
+
+### Both Compiled and Interpreted: 
+#### Compilation: 
+-The program source code is first converted into native machine code through a compiler.
+The output of compiler is a executable program (.exe file)
+- This executable program(.exe file) load directly into processor and gets executed
+- The advantage is fast speed as the compiler can perform optimization because it looks at the program as a whole not 
+    line by line.
+- The disadvantage would be slower debugging (for each change the entire program needs to be re-compiled) and reduced
+ portability (as the program needs to be compiled for each specific platform)
+
+#### Interpretation: 
+-An interpreter reads one line of code and executes it before going for next line.
+The line is converted into native machine code and executed before moving for next line.
+- In interpretation there is no intemediate steps between writing the code and running it.
+- The advantage will be fast debugging as there is no intermediate step between writing a program and running it) 
+ and increased portability.
+- The disadvantage would be slower speed
+
+#### Java's Approach:
+    Java follows both compilation and interpretation.
+- Compilation: The Java program is compiled into an intermediate form bytecode (.class file). 
+- Then the JVM interprets this bytecode
+- The bytecode will run on any platform which has JVM installed (as the program runs in JVM, so platform doesn't matter).
+
+### Automatic Memory Management :
+- JVM performs Automatic Memory Management 
+- To create an instance of a class new operator is used. And when the object is no longer being referenced it is automatically removed 
+from memory.
+- This is also called Garbage Collection.
+
+
+### Multithreading: Java supports Multithreading.
+Multi-Processing: The simultaneous execution of multiple processes/programs at the same time 
+Ex: Concurrent execution of multiple programs like word, chrome, editor etc.
+
+Multithreading: The simultaneous execution of multiple sub-process/thread of a process at the same time.
+EX: Concurrent execution of multiple sub-processes of a program like operating multiple tabs in a chrome browser.
+- Thread: A lightweight sub-process of a process.
+- So, Multithreading is process of executing multiple threads simultaneously.
+
+### Secured
         
+

@@ -73,8 +73,8 @@
   - b) run-time polymorphism.
 
 ----
----
-#Introduction to Java:
+----
+# Introduction to Java:
 # Java:
 - Programming Language: Java is a high level, object-oriented programming language.
 - Platform: Java is also a platform, as it has it's own runtime environment JVM (Java Virtual Machine).
@@ -133,11 +133,12 @@ from memory.
 - This is also called Garbage Collection.
 
 
-### Multithreading: Java supports Multithreading.
-Multi-Processing: The simultaneous execution of multiple processes/programs at the same time 
+### Multithreading: 
+- Java supports Multithreading.
+- Multi-Processing: The simultaneous execution of multiple processes/programs at the same time 
 Ex: Concurrent execution of multiple programs like word, chrome, editor etc.
 
-Multithreading: The simultaneous execution of multiple sub-process/thread of a process at the same time.
+- Multithreading: The simultaneous execution of multiple sub-process/thread of a process at the same time.
 EX: Concurrent execution of multiple sub-processes of a program like operating multiple tabs in a chrome browser.
 - Thread: A lightweight sub-process of a process.
 - So, Multithreading is process of executing multiple threads simultaneously.

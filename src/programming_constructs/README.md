@@ -30,14 +30,18 @@ Steps of execution
 Variables are the symbolic name of memory locations where some data can be stord.
 These values may change during the execution of program
 
-Ex: `int a = 10;`
+Ex: 
+
+`int a = 10;`
 
 ## Constants
 Constants are also symbolic name of memory locations where some data is stored.
 The value needs to be initialized at the time of declaration.
 These values can not changed after initialization.
 
-EX: `final int A = 10; //value can't be changed afterwards`
+EX: 
+
+`final int A = 10; //value can't be changed afterwards`
 
 ## Data Types
 There are two kinds of Data Types:
@@ -60,7 +64,7 @@ There are 8 primitive data types in Java
 |boolean|false|Not defined|
 
 - In Java Garbage values are not allowed; so if a variable is not initialized (assigned a value)
-it gets it's default value
+it gets it's default value.
 - The size of all the data types of Java is pre-defined (unlike c/c++ where size of data type varies on machine) because Java is portable.
 And this makes it uniform across platforms.
 
@@ -75,7 +79,8 @@ Identifiers are the names given to variables, constants, methods, classes, inter
 **Naming Convention**
 
 **1. class or interface identifiers:**
-    Begins with uppercase letter and first letter of each subsequent word is uppercase
+
+Begins with uppercase letter and first letter of each subsequent word is uppercase
     
 EX:
 
@@ -182,11 +187,17 @@ and can be assigned to all numeric types and character.
 A single character enclosed in single quotes.
 This can also be done by prefixing four hexadecimal digits (representing 16 bit unicode character) with '\u';
 EX:
+
 ` char a = 'A';`
+
 ` char b = '1';`
+
 ` char c = '$';`
+
 ` char d = '\u004e';`
+
 ` char e = '\t'; //escape sequence`
+
 Note:
 > An escape sequence represents a character by prefixing it with '\'
 >  \t    -- Horizontal tab
@@ -220,8 +231,154 @@ Unassigned object reference variable have null as value.
 ----
 
 # Operators
+An operator manipulate one or more operands to produce some result.
+
+> Ex: a+b     
+> a,b are operands while + is operator
+
+On the basis of no. of operands there are three types of operators.
+1. unary operator -> single operand
+2. Binary operator -> two operands.
+3. Ternary operator -> three operands.
+
+**General Classification**
+
+**1. Arithmetic operator**
+
+  >'+' Addition
+> 
+> '-' Substraction
+> 
+> '*' Multiplication
+> 
+> '/' Division
+> 
+> '%' Modulo (to find remainder)
+
+**Note**:
+
+'+' operator in Java is overloaded. when it's operands are numeric then simple division takes place.
+But, when one of the operand is string then other operand also get converted into string and String Concatenation takes place.
+
+EX:
+
+    1+2 // 3 (operands numeric)
+
+    "Abc" + 2 //Abc2 (one operand is string)
+
+    "Abc" + "Def" //AbcDef (both operands are string)
+
+**2. Relational operator**
+
+Thease operators always return a boolean value.
+> '==' Equal to
+> 
+> '!=' Not equal to
+> 
+> '<' Less than
+> 
+> '<='  Less than or Equal
+> 
+> '>'  Greater than
+> 
+> '>'   Greater than or equal
+
+**3. Bitwise operator**
+
+**4. Logical operator**
+
+Results in boolean value.
+
+> '&&' logical And
+> 
+> '||' logical Or
+> 
+> '!' not
+
+- '&&' Logical And
+  
+In case of AND if the first operand is false, no matter what the second operand is the result will always be false
+
+| operand1 | operand2                       | result |
+|----------|--------------------------------|--------|
+| true     | false                          | false  |
+| false    | *does not matter* (true/false) | false  |
+| true     | true                           | true   |
+
+- '||' Logical OR
+
+In case of OR if the first operand is true, no matter what the second operand is the result will always be true
+
+| operand1 | operand2                       | result |
+|----------|--------------------------------|--------|
+| false    | false                          | false  |
+| true     | *does not matter* (true/false) | true   |
+| false    | true                           | true   |
+
+- '!' Logical OR
+
+Inverts the value
+
+| operand1 | result | 
+|----------|--------|
+| ! true   | false  | 
+| ! false  | true   | 
+
+**5. Assignment operator**
+
+> Simple assignment operator
+> 
+> '='
+> 
+> Compound assignment operators
+> 
+> '+=' , '-=', '*=', '/=', '%=', '<<=', '>>=', '&=', '|=', '^=', '>>>='
+
+Ex:
+
+```java
+class Demo{
+  public static void main(String[] args) {
+    int a = 10; // a== 10  Simple Assignment 
+    
+    a += 10;  // a = a+10 ; a==20;  Compound Assignment
+  }
+}
+```
 
 
+**6. Ternary operator**
+
+> **operan1 ? operand2 : operand3**
+> 
+> operand1 must result into a boolean value
+> if operand1 results in true; then operand2 is returned.
+> if operand1 results in false; then operand3 is returned.
+
+```java
+class Demo{
+  public static void main(String[] args) {
+    int a = 10;
+    int b = 20;
+    int c = (a>b) ? a : b;
+    System.out.println(c); //20
+    System.out.println("greater number is: "+(a>b ? a :b)); // greater number is 20
+  }
+}
+
+```
+
+- works in C but not in Java. 
+- In Java ternary operator must return a value.
+- Ex: 
+``` C
+int main(){
+  int a = 10;
+  int b = 20;
+  a>b ?printf("a is greater"):(b is greater);
+}
+
+```
 
 
 
